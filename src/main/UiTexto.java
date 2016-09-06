@@ -41,13 +41,16 @@ public class UiTexto {
                 switch (option) {
                     case 1:
                     	adicionaLivro();
-                        isFinish = true;
                         break;
                     case 2:
-                        
+                      
                         break;
                     case 3:
+                    	eliminaLivro();
                         break;
+                    case 8:
+                    	apresentarLivros();
+                    	break;
                     case 9:
                         isFinish = true;
                         isExit = true;
@@ -60,8 +63,20 @@ public class UiTexto {
             }
         }
     }
-    
-    private void adicionaLivro(){
+    //-----------------------------------------------------------------------------
+    private void eliminaLivro() {
+    	System.out.println("Nome do livro: ");
+    	Scanner scanner = new Scanner(System.in);
+    	String nome = scanner.nextLine();
+		bib.RemoverLivro(nome);
+		System.out.println("Eliminado com sucesso!");
+	}
+
+	private void apresentarLivros() {
+		bib.VisualizarTodosLivros();
+	}
+
+	private void adicionaLivro(){
     	
     	System.out.println("Nome do livro: \n");
     	Scanner scanner = new Scanner(System.in);

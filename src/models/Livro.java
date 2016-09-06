@@ -267,6 +267,12 @@ public class Livro implements VisualizarLivro{
 		return null;
 	}
 
+	@Override
+	public String toString() {
+		return "Livro [autor=" + autor + ", nome=" + nome + ", categoria=" + categoria + ", valorizacao=" + valorizacao
+				+ ", isbn=" + isbn + ", critica=" + critica + "]";
+	}
+
 	/**
 	 * Returns valorizacaos.
 	 * @return valorizacaos 
