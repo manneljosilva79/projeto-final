@@ -1,4 +1,4 @@
-package projetorecurso;
+package models;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,7 +18,7 @@ import bibliotecainterfaces.DeterminarMelhoresLivros;
  * 
  * @author Manuel
  */
-public abstract class Biblioteca {
+public class Biblioteca {
 	ArrayList<Livro> livros = new ArrayList<Livro>();
 	/**
 	 * Description of the property nome.

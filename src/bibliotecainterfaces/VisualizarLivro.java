@@ -1,6 +1,6 @@
 package bibliotecainterfaces;
 
-import projetorecurso.Livro;
+import models.Livro;
 
 public interface VisualizarLivro {
 	String escolherLivro(Livro l);

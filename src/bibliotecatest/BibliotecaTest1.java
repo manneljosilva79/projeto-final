@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import projetorecurso.Autor;
-import projetorecurso.Livro;
+import models.Autor;
+import models.Livro;
 
 public class BibliotecaTest1 {
 

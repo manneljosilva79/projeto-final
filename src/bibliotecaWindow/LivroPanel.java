@@ -3,7 +3,7 @@ package bibliotecaWindow;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import projetorecurso.Livro;
+import models.Livro;
 
 public class LivroPanel extends JPanel {
 

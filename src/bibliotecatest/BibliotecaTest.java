@@ -2,11 +2,7 @@ package bibliotecatest;
 
 import java.awt.Component;
 
-
-
-
-
-import projetorecurso.Livro;
+import models.Livro;
 
 public class BibliotecaTest {
 

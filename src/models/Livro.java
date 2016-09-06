@@ -1,4 +1,4 @@
-package projetorecurso;
+package models;
 import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
@@ -7,7 +7,7 @@ import javax.swing.ListSelectionModel;
 import bibliotecainterfaces.AlterarPropriedadesLivro;
 import bibliotecainterfaces.Critica;
 import bibliotecainterfaces.VisualizarLivro;
-import projetorecurso.Valorizacao;
+import models.Valorizacao;
 
 /*******************************************************************************
  * 2016, All rights reserved.

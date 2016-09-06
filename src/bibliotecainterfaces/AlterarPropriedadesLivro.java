@@ -1,6 +1,6 @@
 package bibliotecainterfaces;
 
-import projetorecurso.Livro;
+import models.Livro;
 
 public interface AlterarPropriedadesLivro {
 	public String Escolher(Livro l);

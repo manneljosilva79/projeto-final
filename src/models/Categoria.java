@@ -1,7 +1,7 @@
-package projetorecurso;
+package models;
 import java.util.HashSet;
 
-import projetorecurso.Livro;
+import models.Livro;
 
 /*******************************************************************************
  * 2016, All rights reserved.
