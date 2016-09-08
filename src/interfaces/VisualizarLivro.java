@@ -1,4 +1,4 @@
-package bibliotecainterfaces;
+package interfaces;
 
 import models.Livro;
 

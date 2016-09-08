@@ -10,10 +10,10 @@ public class UiTexto {
     private boolean isExit, isFinish;
     private Biblioteca bib;
     
-    public UiTexto(){
+    public UiTexto() throws ClassNotFoundException{
     	isFinish = false;
     	bib = new Biblioteca("Biblioteca Manuelina");
-    	
+    	bib.carregaLivrosDoFicheiro("ficheiroLivros.bin");	
     }
     
     void iuMenu() {
@@ -26,10 +26,12 @@ public class UiTexto {
             System.out.println(" 3. Remover livro");
             System.out.println(" 4. Inserir valor critico");
             System.out.println(" 5. Alterar valor critica");
-            System.out.println(" 6. Remover ligacao entre dois utilizados");
-            System.out.println(" 7. Alterar propriedades de valorizacao");
-            System.out.println(" 8. Apresentar todos os livros");
-            System.out.println(" 9. Quit");
+            System.out.println(" 6. Visualizar Perfil de um livro");
+            System.out.println(" 7. Guardar");
+            System.out.println(" 8. Alterar propriedades de valorizacao");
+            System.out.println(" 9. Apresentar todos os livros");
+            
+            System.out.println(" 10. Quit");
             System.out.print(" Option: ");
 
             int option;
@@ -48,10 +50,22 @@ public class UiTexto {
                     case 3:
                     	eliminaLivro();
                         break;
-                    case 8:
-                    	apresentarLivros();
+                    case 4:
+                    	inserirValorCritica();
+                    	break;
+                    case 5:
+                    	inserirValorCritica();
+                    	break;
+                    case 6:
+                    	visualizarPerfil();
+                    	break;
+                    case 7:
+                    	guardarLivrosNoFicheiro();
                     	break;
                     case 9:
+                    	apresentarLivros();
+                    	break;
+                    case 10:
                         isFinish = true;
                         isExit = true;
                         System.out.println("See you next time, mate!");
@@ -63,7 +77,34 @@ public class UiTexto {
             }
         }
     }
-    //-----------------------------------------------------------------------------
+  
+
+	private void guardarLivrosNoFicheiro() {
+		bib.guardarLivros("ficheiroLivros.bin");
+		System.out.println("Guardado com sucesso!");
+	}
+
+	private void visualizarPerfil() {
+		System.out.println("Código do livro: ");
+		Scanner scanner = new Scanner(System.in);
+		int isbn = scanner.nextInt();
+		bib.VizualizarLivro(isbn);
+		System.out.println("Visualizado com sucesso!");
+
+		
+	}
+
+	private void inserirValorCritica() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Código do livro: ");
+		Scanner scanner = new Scanner(System.in);
+		int isbn = scanner.nextInt();
+		bib.inserirValorCritica(isbn);
+		System.out.println("Inserido com sucesso!");
+	}
+
+	//-----------------------------------------------------------------------------
     private void eliminaLivro() {
     	System.out.println("Nome do livro: ");
     	Scanner scanner = new Scanner(System.in);
@@ -94,10 +135,7 @@ public class UiTexto {
     	System.out.println("Valorizacao:\n ");
     	String valorizacao = scanner.nextLine();
     	
-    	System.out.println("Critica: \n");
-    	String critica = scanner.nextLine();
-    	
-    	bib.InserirLivro(nome, autor, categoria, isbn, valorizacao, critica);
+    	bib.InserirLivro(nome, autor, categoria, isbn, valorizacao, -1);
     	System.out.println("Inserido com sucesso!");
     }
 }

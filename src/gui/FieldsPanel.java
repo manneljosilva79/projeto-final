@@ -1,4 +1,4 @@
-package bibliotecaWindow;
+package gui;
 
 import javax.swing.JPanel;
 

@@ -1,4 +1,4 @@
-package bibliotecaWindow;
+package gui;
 
 import java.awt.Container;
 import java.awt.EventQueue;
@@ -23,7 +23,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import bibliotecainterfaces.DeterminarMelhoresLivros;
+import interfaces.DeterminarMelhoresLivros;
 import models.Autor;
 import models.Livro;
 
@@ -109,7 +109,7 @@ public class BibliotecaWin extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 
 				java.lang.String newNome = null;
-				java.lang.String newCritica = null;
+				java.lang.Integer newCritica = null;
 				Integer newISBN = null;
 				java.lang.String newAutor = null;
 				java.lang.String newValorizacao = null;

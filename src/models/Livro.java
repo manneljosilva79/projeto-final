@@ -1,12 +1,13 @@
 package models;
+import java.io.Serializable;
 import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
 
-import bibliotecainterfaces.AlterarPropriedadesLivro;
-import bibliotecainterfaces.Critica;
-import bibliotecainterfaces.VisualizarLivro;
+import interfaces.AlterarPropriedadesLivro;
+import interfaces.Critica;
+import interfaces.VisualizarLivro;
 import models.Valorizacao;
 
 /*******************************************************************************
@@ -22,7 +23,7 @@ import models.Valorizacao;
  * 
  * @author Manuel
  */
-public class Livro implements VisualizarLivro{
+public class Livro implements VisualizarLivro, Serializable{
 	/**
 	 * Description of the property autors.
 	 */
@@ -66,7 +67,7 @@ public class Livro implements VisualizarLivro{
 	/**
 	 * Description of the property critica.
 	 */
-	public String critica = "";
+	public Integer critica ;
 
 	/**
 	 * Description of the property valorizacaos.
@@ -80,7 +81,7 @@ public class Livro implements VisualizarLivro{
 	/**
 	 * The constructor.
 	 */
-	public Livro(String nome, String autor, String categoria, String valorizacao, Integer isbn, String critica) {
+	public Livro(String nome, String autor, String categoria, String valorizacao, Integer isbn, Integer critica) {
 		// Start of user code constructor for Livro)
 		super();
 		this.nome=nome;
@@ -233,7 +234,7 @@ public class Livro implements VisualizarLivro{
 	 * Returns critica.
 	 * @return critica 
 	 */
-	public String getCritica() {
+	public Integer getCritica() {
 		return this.critica;
 	}
 
@@ -241,7 +242,7 @@ public class Livro implements VisualizarLivro{
 	 * Sets a value to attribute critica. 
 	 * @param newCritica 
 	 */
-	public void setCritica(String newCritica) {
+	public void setCritica(Integer newCritica) {
 		this.critica = newCritica;
 	}
 

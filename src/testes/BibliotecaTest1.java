@@ -1,4 +1,4 @@
-package bibliotecatest;
+package testes;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +17,7 @@ public class BibliotecaTest1 {
 		l.setCategoria("Romance");
 		l.setValorizacao("Muito Valor");
 		l.setIsbn(1245);
-		l.setCritica("Positiva");
+		l.setCritica(1);
 		
 		Livro l1 = new Livro(null, null, null, null, null, null);
 		l1.setNome("O Casamento de Mafalda");
@@ -25,7 +25,7 @@ public class BibliotecaTest1 {
 		l1.setCategoria("Romance");
 		l1.setValorizacao("Muito Valor");
 		l1.setIsbn(1248);
-		l1.setCritica("Positiva");
+		l1.setCritica(1);
 		
 		Livro l2 = new Livro(null, null, null, null, null, null);
 		l2.setNome("Maria Mariana");
@@ -33,7 +33,7 @@ public class BibliotecaTest1 {
 		l2.setCategoria("Romance");
 		l2.setValorizacao("Muito Valor");
 		l2.setIsbn(1249);
-		l2.setCritica("Pouco Positiva");
+		l2.setCritica(1);
 		
 		Autor a1 = new Autor(null, null, null);
 		a1.setId_autor(1);
