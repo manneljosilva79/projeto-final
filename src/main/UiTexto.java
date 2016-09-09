@@ -45,7 +45,7 @@ public class UiTexto {
                     	adicionaLivro();
                         break;
                     case 2:
-                      
+                      alteraLivro();
                         break;
                     case 3:
                     	eliminaLivro();
@@ -78,6 +78,15 @@ public class UiTexto {
         }
     }
   
+
+	private void alteraLivro() {
+		System.out.println("Nome do Livro: ");
+		Scanner scanner = new Scanner(System.in);
+		String nome = scanner.nextLine();
+		bib.AlterarLivro();
+		System.out.println("Alterado com Sucesso");
+		
+	}
 
 	private void guardarLivrosNoFicheiro() {
 		bib.guardarLivros("ficheiroLivros.bin");

@@ -29,7 +29,7 @@ public class Biblioteca {
 	/**
 	 * Description of the property nome.
 	 */
-	public String nome = "";
+	public static String nome = "";
 
 	// Start of user code (user defined attributes for Biblioteca)
 

@@ -2,16 +2,22 @@ package testes;
 
 import java.awt.Component;
 
+import models.Biblioteca;
 import models.Livro;
 
-public class BibliotecaTest {
+public class BibliotecaTest extends Biblioteca {
 
 	
 	
+public BibliotecaTest(String nome) {
+		super(nome);
+		// TODO Auto-generated constructor stub
+	}
+
 public static void main (String []args){
 	
-	
-	
+	Biblioteca bib = new Biblioteca(nome);
+	bib.nome = "Biblioteca Manuelina";
 	
 	Livro l1 = new Livro(null, null, null, null, null, null);  
 	l1.setNome("Os Quatro e Meia");
@@ -20,7 +26,7 @@ public static void main (String []args){
 	l1.setValorizacao("");
 	l1.setIsbn(23);
 	l1.setCritica(1);
-
+	
 	
 	Livro l2 = new Livro(null, null, null, null, null, null);
 	l2.setNome("A Onda do Paraíso");
