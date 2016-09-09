@@ -28,10 +28,9 @@ public class UiTexto {
             System.out.println(" 5. Alterar valor critica");
             System.out.println(" 6. Visualizar Perfil de um livro");
             System.out.println(" 7. Guardar");
-            System.out.println(" 8. Alterar propriedades de valorizacao");
-            System.out.println(" 9. Apresentar todos os livros");
+            System.out.println(" 8. Apresentar todos os livros");
             
-            System.out.println(" 10. Quit");
+            System.out.println(" 9. Quit");
             System.out.print(" Option: ");
 
             int option;
@@ -62,10 +61,10 @@ public class UiTexto {
                     case 7:
                     	guardarLivrosNoFicheiro();
                     	break;
-                    case 9:
+                    case 8:
                     	apresentarLivros();
                     	break;
-                    case 10:
+                    case 9:
                         isFinish = true;
                         isExit = true;
                         System.out.println("See you next time, mate!");
@@ -83,7 +82,7 @@ public class UiTexto {
 		System.out.println("Nome do Livro: ");
 		Scanner scanner = new Scanner(System.in);
 		String nome = scanner.nextLine();
-		bib.AlterarLivro();
+		bib.AlterarLivro(nome);
 		System.out.println("Alterado com Sucesso");
 		
 	}

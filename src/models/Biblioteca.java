@@ -213,7 +213,7 @@ public class Biblioteca {
 	}
 
 	// ---------------------------------------------------------------------------
-	public void AlterarLivro() {
+	public void AlterarLivro(String nome) {
 		for (Livro livro : livros) {
 			if (nome == livro.getNome()) {
 				// Altere o valor da passagem
