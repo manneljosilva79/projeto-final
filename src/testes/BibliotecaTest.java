@@ -1,6 +1,7 @@
 package testes;
 
 import java.awt.Component;
+import java.util.ArrayList;
 
 import models.Biblioteca;
 import models.Livro;
@@ -18,6 +19,8 @@ public static void main (String []args){
 	
 	Biblioteca bib = new Biblioteca(nome);
 	bib.nome = "Biblioteca Manuelina";
+	
+	ArrayList<Livro> livros = new ArrayList<Livro>();
 	
 	Livro l1 = new Livro(null, null, null, null, null, null);  
 	l1.setNome("Os Quatro e Meia");
@@ -44,5 +47,10 @@ public static void main (String []args){
 	l3.valorizacao = "b";
 	l3.critica = 1;
 
+	livros.add(l1);
+	livros.add(l2);
+	livros.add(l3);
+	
+	
 	}
 }
