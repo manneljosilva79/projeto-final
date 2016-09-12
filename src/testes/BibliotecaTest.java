@@ -3,10 +3,11 @@ package testes;
 import java.awt.Component;
 import java.util.ArrayList;
 
+import junit.framework.TestCase;
 import models.Biblioteca;
 import models.Livro;
 
-public class BibliotecaTest extends Biblioteca {
+public class BibliotecaTest extends TestCase {
 
 	
 	
@@ -17,8 +18,7 @@ public BibliotecaTest(String nome) {
 
 public static void main (String []args){
 	
-	Biblioteca bib = new Biblioteca(nome);
-	bib.nome = "Biblioteca Manuelina";
+	
 	
 	ArrayList<Livro> livros = new ArrayList<Livro>();
 	
