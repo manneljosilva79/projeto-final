@@ -20,7 +20,7 @@ public class Categoria {
 	/**
 	 * Description of the property id_categoria.
 	 */
-	public Integer id_categoria = Integer.valueOf(0);
+	public Integer id_categoria ;
 
 	/**
 	 * Description of the property livros.
@@ -41,7 +41,7 @@ public class Categoria {
 	 */
 	public Categoria(Integer id_categoria, String nome) {
 		// Start of user code constructor for Categoria)
-		super();
+		
 		this.id_categoria=id_categoria;
 		this.nome=nome;
 		// End of user code

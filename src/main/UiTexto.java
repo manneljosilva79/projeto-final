@@ -113,7 +113,7 @@ public class UiTexto {
 	}
 
 	//-----------------------------------------------------------------------------
-    private void eliminaLivro() {
+    public void eliminaLivro() {
     	System.out.println("Nome do livro: ");
     	Scanner scanner = new Scanner(System.in);
     	String nome = scanner.nextLine();

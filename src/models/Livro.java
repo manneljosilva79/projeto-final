@@ -21,7 +21,7 @@ public class Livro {
 	/**
 	 * Description of the property autor.
 	 */
-	public String autor = "";
+	private String autor = "";
 
 	/**
 	 * Description of the property categorias.
@@ -31,17 +31,17 @@ public class Livro {
 	/**
 	 * Description of the property nome.
 	 */
-	public String nome = "";
+	private String nome = "";
 
 	/**
 	 * Description of the property categoria.
 	 */
-	public String categoria = "";
+	private String categoria = "";
 
 	/**
 	 * Description of the property valorizacao.
 	 */
-	public String valorizacao = "";
+	private String valorizacao = "";
 
 	/**
 	 * Description of the property bibliotecas.
@@ -51,7 +51,7 @@ public class Livro {
 	/**
 	 * Description of the property isbn.
 	 */
-	public Integer isbn = Integer.valueOf(0);
+	public Integer isbn ;
 
 	/**
 	 * Description of the property critica.
@@ -72,7 +72,6 @@ public class Livro {
 	 */
 	public Livro(String nome, String autor, String categoria, String valorizacao, Integer isbn, Integer critica) {
 		// Start of user code constructor for Livro)
-		super();
 		this.nome=nome;
 		this.autor=autor;
 		this.categoria=categoria;
