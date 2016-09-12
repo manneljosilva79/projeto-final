@@ -5,13 +5,7 @@ package models;
 
 
 
-/*******************************************************************************
- * 2016, All rights reserved.
- *******************************************************************************/
 
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of Livro.
@@ -89,14 +83,6 @@ public class Livro {
 		// End of user code
 	}
 
-	/**
-	 * Description of the method VisualizarPerfil.
-	 */
-	
-
-	/**
-	 * Description of the method AlterarValorCritica.
-	 */
 	
 
 	/**

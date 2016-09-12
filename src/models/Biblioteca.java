@@ -15,9 +15,6 @@ import java.util.Scanner;
  * 2016, All rights reserved.
  *******************************************************************************/
 
-// Start of user code (user defined imports)
-
-// End of user code
 
 /**
  * Description of Biblioteca.
@@ -26,24 +23,12 @@ import java.util.Scanner;
  */
 public class Biblioteca {
 	ArrayList<Livro> livros = new ArrayList<Livro>();
-	/**
-	 * Description of the property nome.
-	 */
 	
 
-	// Start of user code (user defined attributes for Biblioteca)
+	
 
-	// End of user code
-
-	/**
-	 * The constructor.
-	 */
-	public Biblioteca() {
-		// Start of user code constructor for Biblioteca)
-		super();
-		
-		// End of user code
-	}
+	
+	
 
 	@SuppressWarnings("unchecked")
 	public void carregaLivrosDoFicheiro(String nomeFicheiro) throws ClassNotFoundException {
@@ -143,7 +128,7 @@ public class Biblioteca {
 	
 
 	// ---------------------------------------------------------------------------
-	public void inserirValorCritica(int isbn) {
+	public void inserirValorCritica(Integer isbn) {
 		for (int i = 0; i < livros.size(); i++) {
 			if (livros.get(i).isbn == isbn) {
 
@@ -174,7 +159,7 @@ public class Biblioteca {
 	}
 
 	// ---------------------------------------------------------------------------------
-	public void VizualizarLivro(int isbn) {
+	public void VizualizarLivro(Integer isbn) {
 		for (Livro livro : livros) {
 			if (livro.getIsbn() == isbn) {
 				System.out.println(livro.toString());

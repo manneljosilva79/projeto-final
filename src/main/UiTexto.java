@@ -95,7 +95,7 @@ public class UiTexto {
 	private void visualizarPerfil() {
 		System.out.println("Código do livro: ");
 		Scanner scanner = new Scanner(System.in);
-		int isbn = scanner.nextInt();
+		Integer isbn = scanner.nextInt();
 		bib.VizualizarLivro(isbn);
 		System.out.println("Visualizado com sucesso!");
 
@@ -107,7 +107,7 @@ public class UiTexto {
 		
 		System.out.println("Código do livro: ");
 		Scanner scanner = new Scanner(System.in);
-		int isbn = scanner.nextInt();
+		Integer isbn = scanner.nextInt();
 		bib.inserirValorCritica(isbn);
 		System.out.println("Inserido com sucesso!");
 	}
@@ -138,7 +138,7 @@ public class UiTexto {
     	String categoria = scanner.nextLine();
     	
     	System.out.println("ISBN:\n ");
-    	int isbn = scanner.nextInt();
+    	Integer isbn = scanner.nextInt();
     	
     	System.out.println("Valorizacao:\n ");
     	String valorizacao = scanner.nextLine();
