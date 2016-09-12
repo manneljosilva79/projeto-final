@@ -10,6 +10,7 @@ import org.junit.Test;
 
 import junit.framework.TestCase;
 import main.UiTexto;
+import models.Biblioteca;
 import models.Livro;
 
 public class BibliotecaTest {
@@ -50,8 +51,9 @@ public void InserirLivro() throws Exception {
 public void RemoverLivro() throws Exception{
 	Livro l = new Livro(null, null, null, null, null, null);
 	l.setNome("Jangada de Pedra");
-	
+	Biblioteca b = new Biblioteca();
 	UiTexto ut = new UiTexto();
 	ut.eliminaLivro();
+	b.RemoverLivro("Jangada de Pedra");
 }
 }
