@@ -44,7 +44,6 @@ public void InserirLivro() throws Exception {
 		Assert.assertEquals("Romance",l2.getCategoria());
 		Assert.assertEquals("Muito Valor",l2.getValorizacao());
 		
-		livros.add(l2);
 	
 	}
 
