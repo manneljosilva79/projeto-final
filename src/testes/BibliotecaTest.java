@@ -56,4 +56,8 @@ public void RemoverLivro() throws Exception{
 	ut.eliminaLivro();
 	b.RemoverLivro("Jangada de Pedra");
 }
+public void VisualizarLivro(){
+	Biblioteca b = new Biblioteca();
+	b.VizualizarLivro(null);
+}
 }
