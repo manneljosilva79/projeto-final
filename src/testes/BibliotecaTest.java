@@ -24,8 +24,7 @@ public void InserirLivro() throws Exception {
 		l.setAutor("José Saramago");
 		l.setCategoria("Romance");
 		l.setValorizacao("Sem Valor");
-		l.isbn = 11;
-	
+		
 		Assert.assertEquals("Jangada de Pedra", l.getNome());
 		Assert.assertEquals("José Saramago", l.getAutor());
 		Assert.assertEquals("Romance", l.getCategoria());
