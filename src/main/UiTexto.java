@@ -12,7 +12,7 @@ public class UiTexto {
     
     public UiTexto() throws ClassNotFoundException{
     	isFinish = false;
-    	bib = new Biblioteca("Biblioteca Manuelina");
+    	
     	bib.carregaLivrosDoFicheiro("ficheiroLivros.bin");	
     }
     

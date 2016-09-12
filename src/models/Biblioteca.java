@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import interfaces.DeterminarMelhoresLivros;
+
 
 /*******************************************************************************
  * 2016, All rights reserved.
@@ -29,7 +29,7 @@ public class Biblioteca {
 	/**
 	 * Description of the property nome.
 	 */
-	public static String nome = "";
+	
 
 	// Start of user code (user defined attributes for Biblioteca)
 
@@ -38,10 +38,10 @@ public class Biblioteca {
 	/**
 	 * The constructor.
 	 */
-	public Biblioteca(String nome) {
+	public Biblioteca() {
 		// Start of user code constructor for Biblioteca)
 		super();
-		this.nome = nome;
+		
 		// End of user code
 	}
 
@@ -81,19 +81,7 @@ public class Biblioteca {
 	 * 
 	 * @return nome
 	 */
-	public Object getNome() {
-		return this.nome;
-	}
-
-	/**
-	 * Sets a value to attribute nome.
-	 * 
-	 * @param newNome
-	 */
-	public void setNome(String newNome) {
-		this.nome = newNome;
-	}
-
+	
 	/**
 	 * Description of InserirLivro.
 	 * 
@@ -152,46 +140,7 @@ public class Biblioteca {
 
 	}
 
-	// ------------------------------------------------------------------------
-	public void Determinar() {
-		{
-			DeterminarMelhoresLivros determinar;
-			Scanner ent = new Scanner(System.in);
-			int num, deter = 1;
-			int cont = 1;
-
-			do {
-				System.out.println("");
-				num = ent.nextInt();
-
-				for (int i = 1; i <= num; i++) {
-					deter = deter * i;
-				}
-
-				System.out.println("!" + num + " = " + deter);
-				cont++;
-
-			} while (cont < 2);
-		}
-
-		/**
-		 * The constructor.
-		 */
-
-		// Start of user code (user defined methods for InserirLivro)
-
-		// End of user code
-
-	}
-
-	// --------------------------------------------------------------------------
-	public void Pesquisar() {
-		for (Livro livro : livros) {
-			if (((ArrayList<Livro>) livro.toLowerCase()).indexOf(livro.getNome().toLowerCase()) >= 0) {
-				livros.add(livro);
-			}
-		}
-	}
+	
 
 	// ---------------------------------------------------------------------------
 	public void inserirValorCritica(int isbn) {

@@ -1,14 +1,9 @@
 package models;
-import java.io.Serializable;
-import java.sql.SQLException;
 
-import javax.swing.JOptionPane;
-import javax.swing.ListSelectionModel;
 
-import interfaces.AlterarPropriedadesLivro;
-import interfaces.Critica;
-import interfaces.VisualizarLivro;
-import models.Valorizacao;
+
+
+
 
 /*******************************************************************************
  * 2016, All rights reserved.
@@ -23,7 +18,7 @@ import models.Valorizacao;
  * 
  * @author Manuel
  */
-public class Livro implements VisualizarLivro, Serializable{
+public class Livro {
 	/**
 	 * Description of the property autors.
 	 */
@@ -97,50 +92,10 @@ public class Livro implements VisualizarLivro, Serializable{
 	/**
 	 * Description of the method VisualizarPerfil.
 	 */
-	public void VisualizarPerfil(Livro l) {
-		// Start of user code for method VisualizarPerfil
-		VisualizarLivro visualizar = null ;
-		visualizar.escolherLivro(l);
-		visualizar.visualizar(l);
 	
-		// End of user code
-	}
 
 	/**
 	 * Description of the method AlterarValorCritica.
-	 */
-	public void AlterarValorCritica() {
-		
-		
-	}
-
-	/**
-	 * Description of the method InserirValorCriticaa.
-	 */
-	public void InserirValorCriticaa() {
-		// Start of user code for method InserirValorCriticaa
-		
-		// End of user code
-	}
-
-	/**
-	 * Description of the method AlterarValorPropriedades.
-	 */
-	public void AlterarValorPropriedades(Livro l) {
-		// Start of user code for method AlterarValorPropriedades
-		AlterarPropriedadesLivro alterar = null;
-		
-		alterar.Escolher(l);
-		alterar.Alterar(l);
-		// End of user code
-	}
-
-	// Start of user code (user defined methods for Livro)
-
-	// End of user code
-	/**
-	 * Returns autors.
-	 * @return autors 
 	 */
 	
 
@@ -246,29 +201,6 @@ public class Livro implements VisualizarLivro, Serializable{
 		this.critica = newCritica;
 	}
 
-	@Override
-	public String escolherLivro(Livro l) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public String visualizar(Livro l) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Object toLowerCase1() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Object toLowerCase() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public String toString() {
 		return "Livro [autor=" + autor + ", nome=" + nome + ", categoria=" + categoria + ", valorizacao=" + valorizacao
 				+ ", isbn=" + isbn + ", critica=" + critica + "]";
